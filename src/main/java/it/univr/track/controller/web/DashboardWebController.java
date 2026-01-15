@@ -7,25 +7,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DashboardWebController {
 
     //Dashboard of devices on the map
-    @RequestMapping("/web/map")
+    @RequestMapping("/dashboard/map")
     public String map() {
         return "map";
     }
 
     //visualize the status of all devices
-    @RequestMapping("/web/devices")
+    @RequestMapping("/dashboard/devices")
     public String devices() {
         return "devices";
     }
 
     //visualize the status of all shipments
-    @RequestMapping("/web/shipments")
+    @RequestMapping("/dashboard/shipments")
     public String shipments() {
         return "shipments";
     }
 
     //visualize the status of a single shipment
-    @RequestMapping("/web/shipment")
+    @RequestMapping("/dashboard/shipment")
     public String shipment() {
         return "shipment";
     }
